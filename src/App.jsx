@@ -396,9 +396,9 @@ function WhiteboardContent({ section, isDarkMode, expandedCard, onCardExpand }) 
           {/* BOOK THIS SESSION Button */}
           <ClickableButton 
             position={[2.5, -1.35, 0]}
-            text="📅 BOOK THIS SESSION"
+            text="📅 BOOK NOW"
             onClick={(e) => {
-              e.stopPropagation();
+              e?.stopPropagation?.();
               window.scrollTo({ 
                 top: (5 / 5) * (document.documentElement.scrollHeight - window.innerHeight), 
                 behavior: 'smooth' 
@@ -406,7 +406,7 @@ function WhiteboardContent({ section, isDarkMode, expandedCard, onCardExpand }) 
             }}
             color={isDarkMode ? '#DC2626' : '#EF4444'}
             emissiveColor="#EF4444"
-            width={2.2}
+            width={1.6}
             height={0.35}
             fontSize={0.12}
           />
@@ -470,14 +470,17 @@ function WhiteboardContent({ section, isDarkMode, expandedCard, onCardExpand }) 
           {/* BOOK THIS SESSION Button */}
           <ClickableButton 
             position={[2.5, -1.35, 0]}
-            text="📅 BOOK THIS SESSION"
+            text="📅 BOOK NOW"
             onClick={(e) => {
               e?.stopPropagation?.();
-              onCardExpand?.('book-ai');
+              window.scrollTo({ 
+                top: (5 / 5) * (document.documentElement.scrollHeight - window.innerHeight), 
+                behavior: 'smooth' 
+              });
             }}
             color={isDarkMode ? '#1D4ED8' : '#3B82F6'}
             emissiveColor="#3B82F6"
-            width={2.2}
+            width={1.6}
             height={0.35}
             fontSize={0.12}
           />
@@ -541,14 +544,17 @@ function WhiteboardContent({ section, isDarkMode, expandedCard, onCardExpand }) 
           {/* BOOK THIS SESSION Button */}
           <ClickableButton 
             position={[2.5, -1.35, 0]}
-            text="📅 BOOK THIS SESSION"
+            text="📅 BOOK NOW"
             onClick={(e) => {
               e?.stopPropagation?.();
-              onCardExpand?.('book-mobile');
+              window.scrollTo({ 
+                top: (5 / 5) * (document.documentElement.scrollHeight - window.innerHeight), 
+                behavior: 'smooth' 
+              });
             }}
             color={isDarkMode ? '#059669' : '#10B981'}
             emissiveColor="#10B981"
-            width={2.2}
+            width={1.6}
             height={0.35}
             fontSize={0.12}
           />
@@ -612,14 +618,17 @@ function WhiteboardContent({ section, isDarkMode, expandedCard, onCardExpand }) 
           {/* BOOK THIS SESSION Button */}
           <ClickableButton 
             position={[2.5, -1.35, 0]}
-            text="📅 BOOK THIS SESSION"
+            text="📅 BOOK NOW"
             onClick={(e) => {
               e?.stopPropagation?.();
-              onCardExpand?.('book-professional');
+              window.scrollTo({ 
+                top: (5 / 5) * (document.documentElement.scrollHeight - window.innerHeight), 
+                behavior: 'smooth' 
+              });
             }}
             color={isDarkMode ? '#7C3AED' : '#8B5CF6'}
             emissiveColor="#8B5CF6"
-            width={2.2}
+            width={1.6}
             height={0.35}
             fontSize={0.12}
           />
