@@ -1464,13 +1464,6 @@ function Classroom({ section, onPhoneClick, onEnvelopeClick, isDarkMode, expande
       <Box args={[1, 1.2, 0.02]} position={[2.5, 3, -2.95]}>
         <meshStandardMaterial color="#10B981" />
       </Box>
-      
-      <Cylinder args={[0.25, 0.25, 0.08]} position={[4, 4.5, -2.9]} rotation={[Math.PI / 2, 0, 0]}>
-        <meshStandardMaterial color="#FFFFFF" />
-      </Cylinder>
-      <Cylinder args={[0.22, 0.22, 0.09]} position={[4, 4.5, -2.88]} rotation={[Math.PI / 2, 0, 0]}>
-        <meshStandardMaterial color="#1e293b" />
-      </Cylinder>
     </group>
   );
 }
@@ -2214,8 +2207,8 @@ export default function ClassroomShowcase() {
                   alignItems: 'center',
                   gap: '0.3rem',
                   fontSize: '0.75rem',
-                  color: section === i ? '#0284C7' : '#475569',
-                  fontWeight: section === i ? 700 : 600,
+                  color: section === i ? '#000000' : '#1F2937',
+                  fontWeight: 700,
                   cursor: 'pointer',
                   padding: '0.4rem 0.2rem',
                   borderRadius: '8px',
@@ -2247,8 +2240,8 @@ export default function ClassroomShowcase() {
           </div>
       </>
       
-      {/* Scroll Instruction */}
-      {section === 0 && (
+      {/* Scroll Instruction - Desktop only */}
+      {section === 0 && !isMobile && (
         <div style={{
           position: 'fixed',
           bottom: '2rem',
